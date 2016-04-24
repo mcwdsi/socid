@@ -1,0 +1,808 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/aehicks/ontologies/2016/3/untitled-ontology-124#"
+     xml:base="http://www.semanticweb.org/aehicks/ontologies/2016/3/untitled-ontology-124"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;socid">
+        <dc:creator>Amanda Hicks</dc:creator>
+        <dc:date>2014/04/23</dc:date>
+        <rdfs:comment xml:lang="en">This file contains synthetic A-box data to validate the representaiton of social identities in the Ontology of Medically Related Social Entities with competency questions.</rdfs:comment>
+        <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/d-acts/20150916/d-acts.owl"/>
+        <owl:imports rdf:resource="&obo;omrse.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000117">
+        <rdfs:label rdf:datatype="&xsd;string">definition editor</rdfs:label>
+        <rdfs:label>definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="&rdfs;label">
+        <rdfs:label>label</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000037 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000037">
+        <rdfs:label xml:lang="en">PCORnet racial identification process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000099"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/PCORnet/</obo:IAO_0000412>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000003">
+        <rdfs:label xml:lang="en">PCORnet racial identity datum</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/PCORnet/</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">A racial identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the OMB racial classification, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the OMB allows for multiple racial identities as outputs of an identification process.</rdfs:comment>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000006 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000006">
+        <rdfs:label xml:lang="en">PCORnet American Indian or Alaska Native identity datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/PCORnet/</obo:IAO_0000412>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000007 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000007">
+        <rdfs:label xml:lang="en">PCORnet Asian identity datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/PCORnet/</obo:IAO_0000412>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000009 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000009">
+        <rdfs:label xml:lang="en">PCORnet black or African American identity datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/PCORnet/</obo:IAO_0000412>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000013 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000013">
+        <rdfs:label xml:lang="en">PCORnet Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/PCORnet/</obo:IAO_0000412>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000014 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000014">
+        <rdfs:label xml:lang="en">PCORnet white identity datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000014"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/PCORnet/</obo:IAO_0000412>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000015 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000015">
+        <rdfs:label xml:lang="en">PCORnet multiple race identity datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/PCORnet/</obo:IAO_0000412>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000001 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000001">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000002 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000002">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000003 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000003">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">003</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000004 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000004">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">004</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000005 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000005">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">005</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000006 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000006">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">006</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000007 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000007">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">007</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000008 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000008">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">008</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000009 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000009">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">009</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000010 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000010">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">010</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000011 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000011">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">011</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000012 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000012">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">012</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000013 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000013">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">013</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000014 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000014">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">014</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000015 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000015">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">015</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000016 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000016">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">016</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000017 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000017">
+        <rdf:type rdf:resource="&obo;OMRSE_00000182"/>
+        <rdfs:label xml:lang="en">017</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000019 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000019">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">018</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000020 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000020">
+        <rdf:type rdf:resource="&obo;OMRSE_00000182"/>
+        <rdfs:label xml:lang="en">019</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000021 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000021">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">020</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000022 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000022">
+        <rdf:type rdf:resource="&obo;OMRSE_00000182"/>
+        <rdfs:label xml:lang="en">021</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000023 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000023">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">022</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000024 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000024">
+        <rdf:type rdf:resource="&obo;OMRSE_00000182"/>
+        <rdfs:label xml:lang="en">023</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000025 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000025">
+        <rdf:type rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">024</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000010"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000026 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000026">
+        <rdf:type rdf:resource="&obo;OMRSE_00000182"/>
+        <rdfs:label xml:lang="en">025</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000010"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000027 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000027">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">026</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000001"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000011"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000028 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000028">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">027</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000012"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000029 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000029">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">028</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000003"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000016"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000017"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000030 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000030">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">029</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000019"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000020"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000031 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000031">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">030</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000005"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000032 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000032">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">031</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000006"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000033 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000033">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">032</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000007"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000034 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000034">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">033</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000008"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000021"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000022"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000035 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000035">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <rdfs:label xml:lang="en">034</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000009"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000023"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000024"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000036 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000036">
+        <rdf:type rdf:resource="&obo;OMRSE_00000131"/>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000010"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000025"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000026"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000037 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000037">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000007"/>
+        <rdfs:label xml:lang="en">036</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000038 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000038">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000007"/>
+        <rdfs:label xml:lang="en">037</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000039 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000039">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000007"/>
+        <rdfs:label xml:lang="en">038</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000040 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000040">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000007"/>
+        <rdfs:label xml:lang="en">039</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000041 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000041">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000007"/>
+        <rdfs:label xml:lang="en">040</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000042 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000042">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000015"/>
+        <rdfs:label xml:lang="en">041</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000043 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000043">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000015"/>
+        <rdfs:label xml:lang="en">042</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000044 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000044">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000015"/>
+        <rdfs:label xml:lang="en">043</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000045 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000045">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000015"/>
+        <rdfs:label xml:lang="en">044</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000010"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000046 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000046">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">045</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000001"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000037"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000047 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000047">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">046</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000038"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000048 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000048">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">047</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000003"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000042"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000049 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000049">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">048</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000043"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000050 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000050">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">049</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000039"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000051 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000051">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">050</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000006"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000044"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000052 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000052">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">051</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000057"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000053 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000053">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">052</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000040"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000054 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000054">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">053</rdfs:label>
+        <obo:RO_0002218 rdf:resource="&obo;SOCID_00000009"/>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000041"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000055 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000055">
+        <rdf:type rdf:resource="&obo;PCORnet_00000037"/>
+        <rdfs:label xml:lang="en">054</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;SOCID_00000045"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SOCID_00000057 -->
+
+    <owl:NamedIndividual rdf:about="&obo;SOCID_00000057">
+        <rdf:type rdf:resource="&obo;PCORnet/PCORnet_00000015"/>
+        <rdfs:label xml:lang="en">055</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;SOCID_00000007"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;SOCID_00000001"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000002"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000003"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000004"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000005"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000006"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000007"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000008"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000009"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000010"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000011"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000012"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000013"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000014"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000015"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000016"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000017"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000019"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000020"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000021"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000022"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000023"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000024"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000025"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000026"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000027"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000028"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000029"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000030"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000031"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000032"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000033"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000034"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000035"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000036"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000037"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000038"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000039"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000040"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000041"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000042"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000043"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000044"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000045"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000046"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000047"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000048"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000049"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000050"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000051"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000052"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000053"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000054"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000055"/>
+            <rdf:Description rdf:about="&obo;SOCID_00000057"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
