@@ -1,0 +1,8 @@
+1. Which people are racially identified as Asian according to the OMB criteria? 
+inverse 'is about' some 'Asian identity'
+2.	Which people are racially identified with multiple races according to OMB criteria? 
+inverse 'is about' min 2 'OMB racial identity'
+3.	Which people are racially identified with more than one race in either OMB or PCORnet CDM?
+inverse 'is about' min 2 'OMB racial identity' or inverse 'is about' some 'PCORnet multiple race identity
+4.	Which people are racially identified only as Asian according to OMB or PCORnet criteria?
+under development
